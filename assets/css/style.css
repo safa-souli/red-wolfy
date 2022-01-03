@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@-webkit-keyframes up-down {
+  from {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-10%);
+            transform: scale(1.5) translateY(-10%);
+  }
+}
+@keyframes up-down {
+  from {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-10%);
+            transform: scale(1.5) translateY(-10%);
+  }
+}
+
+@-webkit-keyframes z-out {
+  from {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-10%);
+            transform: scale(1.5) translateY(-10%);
+  }
+}
+
+@keyframes z-out {
+  from {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-10%);
+            transform: scale(1.5) translateY(-10%);
+  }
+}
+
+@-webkit-keyframes opacity-1 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-1 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f9f9f9;
+  /* change if the mask should have another color then white */
+  z-index: 99999;
+  /* makes sure it stays on top */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#status {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 500px;
+  height: 100px;
+  background: url("../img/logo.png") no-repeat center center;
+  background-size: 200px auto;
+  -webkit-animation: opacity-1 3s infinite ease-out;
+          animation: opacity-1 3s infinite ease-out;
+}
+
+body {
+  background: linear-gradient(150deg, white 5%, #9b1717 20%, #6d0d6d 100%) no-repeat;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(150deg, #9b1717 30%, #9b1717 30%, #6d0d6d 60%, #6d0d6d 60%, #6d0d6d 100%) no-repeat;
+  }
+}
+
+.desktop-only-header {
+  display: initial;
+}
+
+.desktop-only-header .box-header-desktop {
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.3);
+          box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.3);
+}
+
+@media (max-width: 768px) {
+  .desktop-only-header {
+    display: none;
+  }
+}
+
+.mobile-only-header {
+  display: initial;
+}
+
+@media (min-width: 768px) {
+  .mobile-only-header {
+    display: none;
+  }
+}
+
+header .navbar-brand img {
+  max-height: 3rem;
+}
+
+.border-custom {
+  border-style: solid;
+  border-color: white;
+  border-width: 10px 10px 10px 10px;
+}
+
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 5in;
+  width: 100%;
+}
+
+.display-7 {
+  font-size: 2em;
+}
+
+.moto-grid .row {
+  color: black;
+}
+
+.height-11 {
+  height: 11rem;
+}
+
+.heading-3 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .heading-3 {
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-5 {
+  color: #9b1717;
+}
+
+.heading-5 hr {
+  border: none;
+  height: 2px;
+  background-color: #9b1717;
+  opacity: inherit;
+}
+
+p {
+  font-size: 80%;
+  line-height: 1.5;
+}
+
+.social-links a {
+  font-size: 5rem;
+  padding-right: 2rem;
+  color: #9b1717 !important;
+}
+
+.nav-footer a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
